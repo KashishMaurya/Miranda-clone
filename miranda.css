@@ -1,0 +1,453 @@
+
+@font-face {
+    font-family: domaine;
+    src: url(Domaine.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #c4bcb3;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    background-color: #222;
+    overflow-x: hidden;
+}
+
+#page1{
+    height: 145vh; /*197vh*/
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+#nav{
+    
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    border-bottom: 1px solid #7c7c7c;
+}
+#nav img{
+    height: 20px;
+    width: 30%;
+}
+#nav h5{
+    font-size: 13px;
+    font-weight: 100;
+    width: 30%;
+}
+#nav span{
+    width: 30%;
+    font-weight: 100;
+    text-align: right;
+}
+
+
+#elems{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+#elem1{
+    width: 30%;
+    height: 100%;
+}
+#elem2{
+    width: 30%;
+    height: 100%;
+    padding: 20px 60px;
+    text-align: center;
+    border-right: 2px solid #7c7c7c;
+    border-left: 2px solid #7c7c7c;
+}
+#elem3{
+    width: 30%;
+    height: 100%;
+}
+#image-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    transition: all ease 0.5s;
+}
+#elem1 #image-div{
+    height: 60%;
+    width: 100%;
+    overflow: hidden; /* so the image wont zoom out of its border */
+}
+#elem3 #image-div{
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
+}
+#image-div:hover img{
+    scale: 1.1;
+}
+#elem1 h4{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: Canopee;
+}
+#elem1 h4 span{
+    background-color: #b43b12;
+    color: #c4bcb3;
+    font-weight: 100;
+    padding: 4px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+#elem1 p{
+    font-size: 20px;
+    font-family: Domaine;
+    font-weight: 100;
+    color: #6d6c6c;
+}
+#elem3 h4{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: Canopee;
+}
+#elem3 h4 span{
+    background-color: #b43b12;
+    color: #c4bcb3;
+    font-weight: 100;
+    padding: 3px;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+#elem3 p{
+    font-size: 20px;
+    font-family: Domaine;
+    font-weight: 100;
+    color: #6d6c6c;
+
+    /* to streatch the text vertically */
+    /* transform: scale(1, 3); */
+        /* -webkit-transform: scale(1, 3);
+        -moz-transform: scale(1, 3);
+        -o-transform: scale(1, 3); */
+        /* transform-origin: 0% 70%; */
+}
+#elem2 h2{
+    font-family: Canopee;
+    font-size: 45px;
+    font-weight: 100;
+}
+#elem2 h3{
+    font-family: Domaine;
+    font-size: 30px;
+    font-weight: 100;
+    color: #1C1C19;
+    margin: 20px 0;
+}
+#elem2 h6{
+    font-family: Domaine;
+    font-size: 15px;
+    font-weight: 100;
+    color: #6d6c6c;
+}
+
+#page1 h1{
+    font-size: 500px;
+    font-weight: 100;
+    font-family: Canopee;
+    background-color: #1c1c19;
+    color: #c4bcb3;
+    line-height: 410px;
+    /* width: 97%; */
+    margin-left: 2%;
+    margin-right: 35px;
+    padding: 0px 15px;
+    letter-spacing: -23px;
+}
+
+#page2 {
+    height: 240vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #7c7c7c;
+}
+#page2-left{
+    height: 100%;
+    width: 35%;
+    padding: 0px 40px;
+    border-right: 1px solid #7c7c7c;
+}
+#page2-left h2{
+    font-family: Canopee;
+    font-size: 100px;
+    line-height: 140px;
+    font-weight: 150;
+}
+#page2-left h2 span{
+    font-size: 180px;
+    font-weight: 500;
+}
+#page2-left img{
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+}
+#page2-left p{
+    font-size: 33px;
+    font-family: domaine;
+    color: #333333;
+    margin-top: 20px;
+}
+#page2-right{
+    height: 100%;
+    width: 70%;
+    padding: 0 60px;
+}
+#page2-right img{
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+}
+#page2-right h1{
+    font-family: canopee;
+    font-size: 95px;
+    letter-spacing: -5px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+
+
+#page3 {
+    /* padding-bottom: 100px; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* margin-top: 220px; */
+    /* background-color: #7c7c7c; */
+}
+
+#page3 h1 {
+    font-size: 350px;
+    font-weight: 100;
+    letter-spacing: -10px;
+    background-color: #1C1C19;
+    width: 910px;
+    color: #C4BCB3;
+    margin-left: 40px;
+    padding: 0 20px;
+    line-height: 350px;
+    font-family: canopee;
+}
+
+#page3 img {
+    height: 400px;
+    position: absolute;
+    top: 0;
+    right: 3%;
+    margin-bottom: 40px;
+}
+
+#page4 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    background-color: #C4BCB3;
+}
+
+#page4-left {
+    width: 65%;
+    height: 100%;
+    padding: 80px 60px;
+    border-right: 1px solid #616161;
+}
+
+#page4-left img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#page4-right {
+    width: 35%;
+    height: 100%;
+    padding: 50px 40px;
+}
+
+#page4-right h1{
+    font-size: 82px;
+    font-family: Canopee;
+    line-height: 110px;
+    font-weight: 200;
+}
+#page4-right h1 span{
+    font-size: 150px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+#page4-right p {
+    font-size: 25px;
+    font-family: domaine;
+    font-weight: 100;
+    color: #2f2f2f;
+    margin-left: 10px;
+    /* margin-bottom: 150px; */
+    /* line-height: 35px; */
+}
+
+#page5 {
+    padding: 25px 0;
+    width: 100%;
+    background-color: #C4BCB3;
+    border-top: 1px solid #2f2f2f;
+    border-bottom: 1px solid #2f2f2f;
+
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#page5::-webkit-scrollbar {
+    display: none;
+}
+
+#page5 h1 {
+    font-size: 100px;
+    font-family: domaine;
+    font-weight: 100;
+    display: inline-block;
+    /* background-color: red; */
+    animation-timing-function: linear;
+    margin-right: 30px;
+    animation-name: scroll;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+#page5 h1 span {
+    font-family: canopee;
+    background-color: #1b1b1b;
+    color: #C4BCB3;
+    padding: 0 12px;
+}
+
+#page6 {
+    height: 100px;
+    width: 100%;
+    background-color: #C4BCB3;
+}
+#page6 h2{
+    padding-top: 30px;
+    padding-left: 40%;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-100% - 34px));
+    }
+}
+
+#page5:hover h1{
+    animation-play-state: paused;
+}
+
+
+#page7{
+    height: 230vh;
+    width: 100%;
+    font-family: canopee;
+}
+#page7-1{
+    width: 750px;
+    height: 600px;
+    display: flex;
+}
+#page7-1-left{
+    display: flex;
+    flex-wrap: wrap;
+}
+#page7-1-left h1{
+    font-size: 420px;
+    margin-left: 25px;
+    font-weight: 100;
+    line-height: 300px;
+    letter-spacing: -10px;
+}
+#page7-1-left h2{
+    font-size: 480px;
+    font-weight: 100;
+    letter-spacing: -18px;
+    margin-left: 20px;
+    line-height: 400px;
+}
+#page7-1-left img{
+    height: 300px;
+    width: 200px;
+    margin-left: 40px;
+}
+#page7-1-right img{
+    height: 660px;
+    width: 560px;
+    margin-left: 40px;
+    margin-right: 40px;
+    object-fit: cover;
+}
+
+#page7-2{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#page7-2 h1{
+    font-size: 340px;
+    font-weight: 100;
+    margin-left: 400px;
+    margin-top: -320px;
+}
+#page7-2 img{
+    height: 300px;
+    margin-top: 100px;
+    margin-left: 40px;
+}
+
+#page7-3{
+    display: flex;
+}
+#page7-3 h1{
+    font-size: 320px;
+    font-weight: 100;
+    background-color: black;
+    color: #C4BCB3;
+    margin-left: 40px;
+    letter-spacing: -10px;
+    padding: 0px 20px;
+    line-height: 300px;
+}
+#page7-3 p{
+    font-size: 30px;
+    font-family: domaine;
+    margin-left: 30px;
+}
+#page7-3 p span{
+    font-size: 110px;
+    font-weight: 400;
+    font-family: canopee;
+}
